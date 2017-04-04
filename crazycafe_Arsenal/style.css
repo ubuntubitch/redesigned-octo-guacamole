@@ -78,6 +78,7 @@ body {
     font-family: 'Arsenal', sans-serif;
     font-size: 16px;
     line-height: 25px;
+    background-color: #ffe6df;
     color: #848484;
 }
 
@@ -328,7 +329,7 @@ body {
 }
 
 .header_area .mainmenu ul#nav li a {
-    color: #141414;
+    color: #fff;
     display: block;
     font-size: 12px;
     font-weight: 400;
@@ -360,7 +361,12 @@ body {
 
 /* sub-menu */
 
-.header_area .mainmenu ul#nav li:hover a {
+#nav .linktext {
+    font-weight: bolder;
+}
+
+.header_area .mainmenu ul#nav li:hover a, .linktext:hover {
+
     color: #e8b71a;
 }
 
@@ -2358,3 +2364,33 @@ body.preloader_active {
     margin-top: -32px;
     margin-left: -32px;
 }
+
+#pricing {
+    margin: 50px;
+}
+
+.main-pricing {
+    margin-top: 50px;
+}
+
+.pricing-item {
+    padding: 40px 20px;
+    border: 1px solid #fa6900;
+}
+
+.pricing-item:hover {
+    box-shadow: 0px 0px 20px #fa6900;
+}
+
+.pricing-title h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.price {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+

@@ -25,6 +25,7 @@ CSS INDEX
    12.Footer Area Css
         13.1-Footer_top_area Css
         13.2-Footer_bottom_area Css
+
 =======================================================================*/
 
 
@@ -78,6 +79,7 @@ body {
     font-family: 'Antic', sans-serif;
     font-size: 16px;
     line-height: 25px;
+    background-color: #F5F5D6;
     color: #848484;
 }
 
@@ -247,6 +249,7 @@ body {
 .gallery_icon a,
 .contact_page_input input[type="submit"],
 .grid-item::after,
+.pricing-item,
 .portfolio_effect::before,
 .portfolio_effect::after {
     -webkit-transition: .5s;
@@ -328,7 +331,7 @@ body {
 }
 
 .header_area .mainmenu ul#nav li a {
-    color: #141414;
+    color: #fff;
     display: block;
     font-size: 12px;
     font-weight: 400;
@@ -360,7 +363,12 @@ body {
 
 /* sub-menu */
 
-.header_area .mainmenu ul#nav li:hover a {
+#nav .linktext {
+    font-weight: bolder;
+}
+
+.header_area .mainmenu ul#nav li:hover a, .linktext:hover {
+
     color: #f38630;
 }
 
@@ -2354,7 +2362,34 @@ body.preloader_active {
     position: absolute;
     left: 50%;
     top: 50%;
-    z-index: 999999999999;
-    margin-top: -32px;
-    margin-left: -32px;
+ }
+
+
+#pricing {
+    margin: 50px;
+}
+
+.main-pricing {
+    margin-top: 50px;
+}
+
+.pricing-item {
+    padding: 40px 20px;
+    border: 1px solid #fa6900;
+}
+
+.pricing-item:hover {
+    box-shadow: 0px 0px 20px #fa6900;
+}
+
+.pricing-title h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.price {
+    margin: 20px 0;
+    font-size: 1.5em;
 }
